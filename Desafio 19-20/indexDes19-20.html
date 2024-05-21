@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 19-20</title>
+</head>
+<body id="corpo">
+    <!-- <p id="meuParagrafo">Este é o texto original.</p> -->
+    <button onclick="mudarCor()">Mudar Cor de fundo</button>
+
+
+
+    <script>
+        function mudarCor(){
+
+            let fundo = document.getElementById('corpo');
+            fundo.style.background = 'blue';
+            // paragrafo.textContent = 'O texto foi alterado!';
+        }
+        
+        voto=prompt("Eleições 2022\n Candidatos:\n 13-Lula\n 17-Bolsonaro\n 27-Eymael\n 14-Padre Kelmon\n Qual candidato você vota ? ")
+
+        switch(voto){
+            case '13':
+                alert("Votou no candidato Lula");
+                break;
+            case '17':
+                alert("Votou no candidato Bolsonaro");
+                break;
+            case '27':
+                alert("Votou no candidato Eymael");
+                break;
+            case '14':
+                alert("Votou no candidato Padre Kelmon");
+                break;
+            default:
+                alert("Voto nulo ou invalido");
+        }
+
+    </script>
+    
+</body>
+</html>
