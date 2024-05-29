@@ -15,7 +15,6 @@ const prompt = require('prompt-sync')();
 
                 case 1:
                     pontuacao += perguntasZoologia();
-                    console.log(`Sua pontuação foi: ${pontuacao}`);
                     break;
 
                 case 2:
@@ -31,13 +30,12 @@ const prompt = require('prompt-sync')();
                     break;
             }
         }
-        console.log(`Sua pontuação foi: ${pontuacao}`);
         //return pontuacao;
     }
 
 
     function perguntasZoologia(){
-        //let pontuacao;
+        let pontuacao;
         resposta = prompt("O maior animal que já vimos no planeta foi um dinossauro! Verdadeiro ou falso? ");
             if (resposta.toLowerCase() === "falso") {
                 console.log("Parabéns!");
