@@ -14,7 +14,7 @@ const prompt = require('prompt-sync')();
                     break;
 
                 case 1:
-                    pontuacao += perguntasZoologia();
+                    pontuacao = perguntasZoologia();
                     break;
 
                 case 2:
@@ -40,6 +40,7 @@ const prompt = require('prompt-sync')();
             if (resposta.toLowerCase() === "falso") {
                 console.log("Parabéns!");
                 pontuacao++;
+                console.log(`${pontuacao}`);
             } else {
                 console.log("Resposta incorreta. A baleia azul foi o maior animal que já viveu.");
             }
