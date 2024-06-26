@@ -1,0 +1,1 @@
+Com base nos conhecimentos adquiridos na parada de quarta-feira, faça um carrossel usando JavaScript puro. 
